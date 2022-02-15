@@ -1,8 +1,9 @@
 import React from 'react'
+import { Footer } from './footer'
 
 const Layout = ({children}) => {
     return(
-        <div>
+        <div className='bg-white'>
             <div className='bg-blue text-white flex justify-between p-5'>
                 <h1>Dr Tasneem's Clinic</h1>
                 <div className='flex flex-row pr-5'>
@@ -12,9 +13,7 @@ const Layout = ({children}) => {
                 </div>
             </div>
             {children}
-            <div>
-                <h1>Footer</h1>
-            </div>
+            <Footer/>
         </div>
     )
 }
