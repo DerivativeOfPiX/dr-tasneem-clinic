@@ -9,21 +9,67 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
 
 /*for image on front page*/
-.fill  {
+.fill {
     object-fit: cover;
 }
 
 .emphasize-text {
     font-weight: bold;
     font-size: xx-large;
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
 }

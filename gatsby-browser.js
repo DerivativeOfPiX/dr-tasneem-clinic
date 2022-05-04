@@ -1,5 +1,7 @@
 const React = require("react")
 const Layout = require("./src/components/layout").default
+require('animate.css');
+
 
 require("./src/css/main.css")
 
