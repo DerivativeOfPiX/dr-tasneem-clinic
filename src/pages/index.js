@@ -49,7 +49,7 @@ const IndexPage = () => {
           </p>
           <div className="w-full py-5" />
           <Link to="/appointment">
-          <button className="p-2 my-4 w-1/4 mr-3 bg-lblue font-serif rounded float-right self-end">Book an Appointment</button>
+          <button className="p-2 my-4 md:w-2/5 mr-3 bg-lblue font-serif italic rounded float-right self-end text-2xl font-bold">Book an Appointment</button>
           </Link>
         </div>
       </div>
@@ -65,7 +65,7 @@ const IndexPage = () => {
               <Card heading={serviceData[service].name}
                 description={serviceData[service].description} />
             </div>
-            <span onClick={() => service + 1 > serviceData.length ? setService(0) : setService(service + 1)} className="p-4">
+            <span onClick={() => service + 1 > serviceData.length - 1 ? setService(0) : setService(service + 1)} className="p-4">
               <FontAwesomeIcon className="transition ease-in-out hover:text-black hover:bg-white duration-300 p-2 rounded text-white top-1/2 translate-y-1/2" icon={faArrowRight} size="lg" />
             </span>
           </div>

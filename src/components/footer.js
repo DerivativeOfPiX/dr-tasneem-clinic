@@ -5,19 +5,19 @@ export function Footer() {
         <footer className="bg-black">
             <div className="w-2/3 m-auto">
                 <h1 className="emphasize-text py-5 text-white font-serif text-3xl">Reach Out to Us</h1>
-                <div className="flex p-4">
-                    <div className="p-4 flex text-white flex-col">
-                        <div>
-                            <h2 className="font-serif text-xl font-bold">Malir Cantt Clinic</h2>
-                            <p>New AD Mart, Above Agha Khan Lab, Malir Cantt.</p>
+                <div className="flex p-2">
+                    <div className="p-3 flex text-white flex-col">
+                        <div className="my-2">
+                            <h2 className="font-serif text-xl font-bold underline underline-offset-4">Malir Cantt Clinic</h2>
+                            <p className="italic py-2">New AD Mart, Above Agha Khan Lab, Malir Cantt.</p>
                         </div>
-                        <div>
-                            <h2 className="font-serif text-xl font-bold">Clifton Clinic</h2>
-                            <p>The Plaza Mall, Room Number 526, 5th Floor, Doctor's Plaza, 2 Talwar, Clifton</p>
+                        <div className="my-2">
+                            <h2 className="font-serif text-xl font-bold underline underline-offset-4">Clifton Clinic</h2>
+                            <p className="italic py-2">The Plaza Mall, Room Number 526, 5th Floor, Doctor's Plaza, 2 Talwar, Clifton</p>
                         </div>
                     </div>
                     <div className="text-white m-auto text-center">
-                        <h1 className="font-serif font-bold text-xl my-2">Contact number</h1>
+                        <h1 className="font-serif font-bold text-2xl my-2">Contact number</h1>
                         <a className="underline underline-offset-4 text-lg hover:text-lblue" href='tel:+923022301918'>0302-2301918</a>
                     </div>
                 </div>
