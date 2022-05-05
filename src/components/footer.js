@@ -1,3 +1,6 @@
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faXmarkSquare } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
 export function Footer() {
@@ -16,9 +19,23 @@ export function Footer() {
                             <p className="italic py-2">The Plaza Mall, Room Number 526, 5th Floor, Doctor's Plaza, 2 Talwar, Clifton</p>
                         </div>
                     </div>
-                    <div className="text-white m-auto text-center">
-                        <h1 className="font-serif font-bold text-2xl my-2">Contact number</h1>
-                        <a className="underline underline-offset-4 text-lg hover:text-lblue" href='tel:+923022301918'>0302-2301918</a>
+                    <div className="text-white m-auto ">
+                        <div className="text-center my-2">
+                            <h1 className="font-serif font-bold text-2xl my-2">Contact number</h1>
+                            <a className="underline underline-offset-4 text-lg hover:text-lblue" href='tel:+923022301918'>0302-2301918</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div className="my-2">
+                    <div className="flex space-x-2 text-lblue justify-end">
+                        <a href="https://www.facebook.com/drtasneemsclinic/" target="_blank">
+                            <FontAwesomeIcon className="p-2 fa-brand fa-2x hover:text-blue" icon={faFacebook} />
+                        </a>
+                        <a href="https://www.instagram.com/dr.tasneemsclinic/" target="_blank">
+                            <FontAwesomeIcon className="p-2 fa-brand fa-2x hover:text-blue" icon={faInstagram} />
+                        </a>
                     </div>
                 </div>
             </div>
