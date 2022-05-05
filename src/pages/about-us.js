@@ -4,6 +4,7 @@ import { Card } from "../components/card"
 const About = () => {
   return (
     <main>
+      <title>About Us</title>
       <h1 className="bg-sky-500 text-stone-50">
         About Us
       </h1>
