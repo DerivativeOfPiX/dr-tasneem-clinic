@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { ErrorMessage, Form, Formik, Field } from "formik"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons"
 
@@ -18,14 +17,13 @@ export default function Appointment(props) {
                         isLoading ?
                             <div className="w-full h-full bg-black">
                                 <div className="flex justify-center">
-                                    
                                     <h2 className="text-white text-2xl">Loading...</h2>
                                     <FontAwesomeIcon icon={faSpinner} size='lg' className="text-white animate-spin mx-4 mt-2"  />
                                 </div>
                             </div>
                             : null
                     }
-                    <iframe src="https://dtc-build.herokuapp.com/index.php" frameBorder="0" className="w-full my-5" height={window.innerHeight + "px"}
+                    <iframe src="https://dtc-build.herokuapp.com/index.php" scrolling="no" frameBorder="0" className="w-full my-5" height={window.innerHeight - 10 + "px"}
                         onLoad={() => {
                             setIsLoading(false)
                             console.log("Loaded !")
