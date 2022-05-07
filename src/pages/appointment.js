@@ -24,11 +24,12 @@ export default function Appointment(props) {
                             </div>
                             : null
                     }
-                    <IframeResizer src="https://dtc-build.herokuapp.com/index.php" scrolling="no" frameBorder="0" className="w-full my-5" height={window.innerHeight - 10 + "px"}
+                    {/*Remember that you can manipulate the url to prefill some fields ... */}
+                    <IframeResizer src="https://dtc-build.herokuapp.com/index.php" className="w-full my-5 h-screen"
                         onLoad={() => {
                             setIsLoading(false)
                         }} 
-                        heightCalculationMethod="taggedElement"/>
+                        />
                 </div>
             </div>
         </main>
