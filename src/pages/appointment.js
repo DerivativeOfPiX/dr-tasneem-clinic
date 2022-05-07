@@ -25,7 +25,7 @@ export default function Appointment(props) {
                             : null
                     }
                     {/*Remember that you can manipulate the url to prefill some fields ... */}
-                    <IframeResizer src="https://dtc-build.herokuapp.com/index.php" className="w-full my-5 h-screen"
+                    <IframeResizer src="https://ea.drtasneemsclinic.com/index.php" className="w-full my-5 h-screen"
                         onLoad={() => {
                             setIsLoading(false)
                         }} 
