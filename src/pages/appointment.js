@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/free-solid-svg-icons"
+import IframeResizer from "iframe-resizer-react"
 
 export default function Appointment(props) {
 
@@ -18,16 +19,16 @@ export default function Appointment(props) {
                             <div className="w-full h-full bg-black">
                                 <div className="flex justify-center">
                                     <h2 className="text-white text-2xl">Loading...</h2>
-                                    <FontAwesomeIcon icon={faSpinner} size='lg' className="text-white animate-spin mx-4 mt-2"  />
+                                    <FontAwesomeIcon icon={faSpinner} size='lg' className="text-white animate-spin mx-4 mt-2" />
                                 </div>
                             </div>
                             : null
                     }
-                    <iframe src="https://dtc-build.herokuapp.com/index.php" scrolling="no" frameBorder="0" className="w-full my-5" height={window.innerHeight - 10 + "px"}
+                    <IframeResizer src="https://dtc-build.herokuapp.com/index.php" scrolling="no" frameBorder="0" className="w-full my-5" height={window.innerHeight - 10 + "px"}
                         onLoad={() => {
                             setIsLoading(false)
-                            console.log("Loaded !")
-                        }} />
+                        }} 
+                        heightCalculationMethod="taggedElement"/>
                 </div>
             </div>
         </main>
